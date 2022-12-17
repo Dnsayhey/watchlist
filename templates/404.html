@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ user.name }}'s Watchlist</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+
+<body>
+    <h2>
+        <img alt="Avatar" class="avatar" src="{{ url_for('static', filename='images/avatar.jpg') }}" />
+        {{ user.name }}'s Watchlist
+    </h2>
+    <ul class="movie-list">
+        <li>
+            Page Not Found - 404
+            <span class="float-right">
+                <a href="{{ url_for('index') }}">Go Back</a>
+            </span>
+        </li>
+    </ul>
+    <footer>
+        <small>&copy; 2022 <a href="/">Zero</a></small>
+    </footer>
+</body>
+
+</html>
